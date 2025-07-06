@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiritual Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Spiritual Counter</h1>
+        <div id="countDisplay">0</div>
+        <div id="tasbihCountDisplay">Tasbihs: 0</div>
+        <div id="goalDisplay">Spiritual Goals: 0</div>
+        <button onclick="incrementCount()">Count</button>
+        <button onclick="resetCount()">Reset</button>
+        <br>
+        <label for="cycleInput">Customize Cycle:</label>
+        <input type="number" id="cycleInput" value="100" min="1" onchange="updateCycle()">
+        <br><br>
+        <label for="themeToggle">Dark Mode</label>
+        <input type="checkbox" id="themeToggle" onchange="toggleTheme()">
+    </div>
+    <audio id="beepAudio" src="click.mp3" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
